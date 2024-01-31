@@ -1,0 +1,72 @@
+/* COMMON */
+.contents_box {
+  width: 100%;
+  height: 100%;
+}
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* HEADER */
+header {
+  width: 100%;
+  height: 5.5rem;
+  background-color: #444;
+}
+header > .inner {
+  height: 5.5rem;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .inner > ul {
+  width: 40rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > .inner > ul.header_menu .menu_item {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-wrap: nowrap;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+header > .inner > ul.header_menu .menu_item {
+}
+header > .inner .header_menu .menu_item .item_contents {
+  display: none;
+}
+header > .inner .header_menu .menu_item:hover .item_name {
+  color: #e2b38e;
+}
+header > .inner .header_menu .menu_item:hover .item_contents {
+  width: 1000px;
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 5.5rem;
+  transform: translateX(-50%);
+  background-color: #444;
+  padding: 16px;
+  box-sizing: border-box;
+}
+header
+  > .inner
+  .header_menu
+  .menu_item:hover
+  .item_contents
+  .contents_menu
+  > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
